@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rolex Inspired Premium Watch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css?family=Cinzel:700|EB+Garamond:700|Share+Tech+Mono|Great+Vibes|Montserrat:900&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      height: 100%; margin: 0; padding: 0;
+      background: radial-gradient(ellipse at 50% 46%, #256b46 0%, #135b37 55%, #02491f 120%);
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .watch-wrap {
+      width: 355px;
+      height: 415px;
+      max-width: 97vw;
+      max-height: 90vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .quote {
+      margin-top: 34px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.62rem;
+      background: linear-gradient(104deg, #f4ecd6 17%, #bdb288 86%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      text-shadow: 0 2px 16px #224a2145;
+      max-width: 94vw;
+      line-height: 1.13;
+    }
+    .digit {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 25px;
+      letter-spacing: 2px;
+      fill: #ffe57d;
+      filter: drop-shadow(0 1.2px 3.5px #3b3009b4);
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+    .timer-pct {
+      font-size: 10px;
+      fill: #e8d478;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 100;
+      letter-spacing: 2.3px;
+      filter: drop-shadow(0 1px 4px #2d330a70);
+      opacity: 0.98;
+      dominant-baseline: middle;
+      text-anchor: middle;
+      transform: translateY(1.2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="watch-wrap">
+    <svg id="watch" viewBox="0 0 355 415" style="width:100%; height:100%; display:block;">
+      <!-- Gold Fluted Bezel -->
+      <ellipse cx="177.5" cy="207.5" rx="140.5" ry="140.5" fill="url(#bezel-gold)" />
+      <!-- 60 ridges/itchings perfectly sized inside bezel -->
+      <g><g id="bezel-flutes"></g></g>
+      <!-- Sapphire Crystal -->
+      <ellipse cx="177.5" cy="207.5" rx="120" ry="120" fill="url(#glass)" />
+      <!-- Enhanced radial black sunburst dial -->
+      <ellipse cx="177.5" cy="207.5" rx="108" ry="108" fill="url(#dial-radialblack)" />
+      <!-- Date Cyclops Window, visually centered -->
+      <g>
+        <rect x="260" y="191.5" width="38" height="27" rx="7" fill="#fffef7" stroke="#b0a170" stroke-width="1.5" filter="url(#cyclops-shadow)" />
+        <rect x="266.5" y="197" width="21.5" height="12.4" rx="3.3" fill="#f7f1d6" />
+        <text id="date-text" x="279" y="205" text-anchor="middle"
+          style="font-family:'EB Garamond',serif;font-size:15px;font-weight:bold;letter-spacing:0.5px;fill:#232819;dominant-baseline:middle;">
+          8-8
+        </text>
+      </g>
+      <!-- Crown Logo below 12 o'clock -->
+      <g transform="translate(126.5,114) scale(1.07)">
+        <path d="M39.4,10.7c0.2,0,0.3,0,0.4-0.1L45,28h0c0.6,1.9,3.4,3.4,6.8,3.4c3.4,0,6.2-1.5,6.8-3.4h0l5.1-17.4c0.1,0,0.3,0,0.4,0c1,0,1.8-0.8,1.8-1.8c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8c0,0.7,0.4,1.3,1,1.6l-5.9,12.7l1-17.1c0,0,0,0,0,0c1,0,1.8-0.8,1.8-1.8c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8c0,0.8,0.6,1.5,1.3,1.7l-3.9,16.7L52,4.3c0.9-0.1,1.5-0.9,1.5-1.8c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8c0,0.9,0.7,1.7,1.5,1.8l-1.9,18.4L45.7,6C46.5,5.8,47,5.1,47,4.3c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8c0,1,0.8,1.8,1.8,1.8c0,0,0,0,0,0l1,17.1l-5.9-12.7c0.6-0.3,1-0.9,1-1.6c0-1-0.8-1.8-1.8-1.8c-1,0-1.8,0.8-1.8,1.8C37.6,9.9,38.4,10.7,39.4,10.7z M51.8,26.5c3.1,0,5.6,0.8,5.6,1.8c0,1-2.5,1.8-5.6,1.8c-3.1,0-5.6-0.8-5.6-1.8C46.1,27.3,48.7,26.5,51.8,26.5z"
+          fill="gold" style="filter: drop-shadow(0 1px 3px #ad952a74);" />
+      </g>
+      <!-- Hands with longer tails -->
+      <g id="hands">
+        <g id="hourHand">
+          <rect x="174.7" y="152" width="7.1" height="68" rx="2.7" fill="url(#hand-gold)" />
+          <rect x="174.7" y="207" width="7.1" height="13" rx="2.7" fill="url(#hand-gold-bright)" />
+        </g>
+        <g id="minuteHand">
+          <rect x="175.6" y="115" width="4" height="102" rx="2" fill="url(#hand-gold)" />
+          <rect x="175.6" y="207.5" width="4" height="18.5" rx="2" fill="url(#hand-gold-bright)" />
+        </g>
+        <g id="secondHand" transform="rotate(0 177.5 207.5)">
+          <rect x="175.88" y="104" width="3.32" height="103" rx="1.56" fill="#fbeab4" />
+          <rect x="175.88" y="207.5" width="3.32" height="25" rx="1.56" fill="#e8cc85" />
+          <circle cx="177.5" cy="207.5" r="7.1" fill="#c6a847" stroke="#efd382" stroke-width="1.58" />
+          <circle cx="177.5" cy="207.5" r="3.8" fill="#ffe189" />
+        </g>
+      </g>
+      <!-- Timer digits and percentage inside dial -->
+      <g id="timer-area">
+        <g id="timer-digits"></g>
+        <text id="timer-down" x="177.5" y="290" class="timer-pct"></text>
+      </g>
+      <defs>
+        <radialGradient id="bezel-gold" cx="52%" cy="56%" r="99%">
+          <stop offset="0%" stop-color="#fcfadb" />
+          <stop offset="53%" stop-color="#ceb66c" />
+          <stop offset="100%" stop-color="#9c823a" />
+        </radialGradient>
+        <linearGradient id="bezel-flute1" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#ffe69a" />
+          <stop offset="100%" stop-color="#c1a44c" />
+        </linearGradient>
+        <linearGradient id="bezel-flute2" x1="100%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#f2de92" />
+          <stop offset="100%" stop-color="#efe6cf" />
+        </linearGradient>
+        <radialGradient id="glass" cx="60%" cy="48%" r="97%">
+          <stop offset="0%" stop-color="#fff9" />
+          <stop offset="100%" stop-color="#fffa" />
+        </radialGradient>
+        <radialGradient id="dial-radialblack" cx="50%" cy="50%" r="85%">
+          <stop offset="0%" stop-color="#29282a" />
+          <stop offset="35%" stop-color="#15181a" />
+          <stop offset="67%" stop-color="#16171b" />
+          <stop offset="91%" stop-color="#070809" />
+          <stop offset="100%" stop-color="#000" />
+        </radialGradient>
+        <filter id="cyclops-shadow" x="-35%" y="-45%" width="170%" height="160%">
+          <feDropShadow dx="0" dy="1.3" stdDeviation="1.3" flood-color="#ddc871" />
+          <feDropShadow dx="1.1" dy="2.1" stdDeviation="2" flood-color="#231" />
+        </filter>
+        <linearGradient id="hand-gold" x1="0%" y1="0%" x2="100%" y2="85%">
+          <stop offset="0%" stop-color="#fffcc0" />
+          <stop offset="85%" stop-color="#c5ae5c" />
+        </linearGradient>
+        <linearGradient id="hand-gold-bright" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#f9ebaf" />
+          <stop offset="100%" stop-color="#d3c188" />
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="quote">Life rewards Actions, <br> not intelligence</div>
+  <script>
+    // Fluted bezel ridges perfectly sized within bezel ring
+    const fluteCount = 60;
+    const bezelFlutes = document.getElementById('bezel-flutes');
+    for (let i = 0; i < fluteCount; ++i) {
+      const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      g.setAttribute('transform', `rotate(${i * 6} 177.5 207.5)`);
+      const r = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      r.setAttribute('x', '174');
+      r.setAttribute('y', '67'); // Positioned along bezel inner edge
+      r.setAttribute('width', i % 2 === 0 ? '3.75' : '2.2');
+      r.setAttribute('height', '28');
+      r.setAttribute('rx', i % 2 === 0 ? '1.2' : '0.85');
+      r.setAttribute('fill', i % 2 === 0 ? 'url(#bezel-flute1)' : 'url(#bezel-flute2)');
+      g.appendChild(r);
+      bezelFlutes.appendChild(g);
+    }
+    // Hand rotation helpers
+    function setHandAngle(el, deg, cx, cy) {
+      el.setAttribute('transform', `rotate(${deg} ${cx} ${cy})`);
+    }
+    const hourHand = document.getElementById('hourHand');
+    const minuteHand = document.getElementById('minuteHand');
+    const secondHand = document.getElementById('secondHand');
+    const dateText = document.getElementById('date-text');
+    const timerDown = document.getElementById('timer-down');
+    const timerDigitsGroup = document.getElementById('timer-digits');
+    function getFormattedDate() {
+      const now = new Date();
+      const day = now.getDate();
+      const month = now.getMonth() + 1;
+      return `${day}-${month}`;
+    }
+    function renderDigitalDigits(group, value) {
+      let txt = value.toString().padStart(5, '0');
+      group.innerHTML = "";
+      let offset = 177.5 - ((txt.length - 1) * 14) / 2;
+      for (let i = 0; i < txt.length; i++) {
+        const dig = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        dig.setAttribute('class', 'digit');
+        dig.setAttribute('x', offset + 14 * i);
+        dig.setAttribute('y', '275');
+        dig.textContent = txt[i];
+        group.appendChild(dig);
+      }
+    }
+    function updateWatch() {
+      const now = new Date();
+      const s = now.getSeconds();
+      const m = now.getMinutes();
+      const h = now.getHours();
+      const ms = now.getMilliseconds();
+      // Hands rotation calculation
+      let hour = h % 12 + m / 60 + s / 3600;
+      let hourDeg = hour * 30;
+      let min = m + s / 60;
+      let minDeg = min * 6;
+      setHandAngle(hourHand, hourDeg, 177.5, 207.5);
+      setHandAngle(minuteHand, minDeg, 177.5, 207.5);
+      const secDeg = ((s + ms / 1000) / 60) * 360;
+      setHandAngle(secondHand, secDeg, 177.5, 207.5);
+      // Date update
+      if (dateText) dateText.textContent = getFormattedDate();
+      // Timer update
+      const passed = h * 3600 + m * 60 + s;
+      const remaining = 86400 - passed;
+      const rem = Math.max(0, remaining);
+      const percent = (rem / 86400) * 100;
+      let shownPercent = Math.floor(percent);
+      if (percent > 0 && percent < 100) shownPercent = percent.toFixed(1).replace(/\.0$/, "");
+      renderDigitalDigits(timerDigitsGroup, rem);
+      if (timerDown) {
+        timerDown.innerHTML = `${shownPercent}<tspan style="font-family:'Montserrat',Arial,sans-serif;font-size:13px;">%</tspan>`;
+      }
+      requestAnimationFrame(updateWatch);
+    }
+    updateWatch();
+    if (dateText) dateText.textContent = getFormattedDate();
+  </script>
+</body>
+</html>
